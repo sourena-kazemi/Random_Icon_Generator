@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+    <script src="html2canvas.min.js" defer></script>
+    <title>Random Icon</title>
+</head>
+<body>
+    <div class="app">
+        <section class="images">
+            <div class="box"></div>
+            <section class="result_box"></section>
+        </section>
+        
+        <section class="icon_infos">
+            <section class="size_input_container">
+                <input type="range" min="2" max="20" id="icon_size_input" onchange="changeIconSize(this)">
+            </section>
+            <section class="color_inputs">
+                <input type="color" id="bg_color_input" onchange="changeIconColor(this,'bgc')" value="#00ffff">
+                <input type="color" id="tile_color_input" onchange="changeIconColor(this,'tc')" value="#ffd700">
+            </section>
+            <section class="buttons">
+                <button class="generate_btn btn" onclick="generateIcon()">Generate</button>
+                <button class="download_btn btn" onclick="download()">Download</button>
+            </section>
+            <h4>Download The Bottom Icon After Pressing The Download Button</h4>
+
+        </section>
+        
+</div>
+
+</body>
+
+
+</html>

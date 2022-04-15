@@ -1,0 +1,83 @@
+:root{
+    --bgc : gold;
+}
+body{
+    background-color: rgb(196, 196, 196);
+    font-weight:bold;
+}
+.app{
+    display:flex;
+    justify-content:space-evenly;
+    width:100%;
+    margin-top: 2rem;
+}
+.icon_infos{
+    display:flex;
+    gap:1rem;
+    align-items:center;
+    flex-direction: column;
+}
+.size_input_container{
+    display:flex;
+    justify-content:space-evenly
+}
+.box{
+    width:200px;
+    height:200px;
+    background-color:gold;
+    display:grid;
+    margin:20px auto;
+    transform-origin: 50% 0;
+}
+.tile{
+    background-color:var(--bgc);
+    border:1px solid var(--bgc);
+}
+#icon_size_input{
+    -webkit-appearance: none;
+    opacity:0.7;
+    width:200px;
+    height:1rem;
+    outline:none;
+    border-radius:15px;
+    transform: scale(1.2);
+    box-shadow:5px 5px 10px rgb(84, 84, 84);
+}
+#icon_size_input:hover{
+    opacity:1
+}
+#icon_size_input::-webkit-slider-thumb,#icon_size_input::-moz-range-thumb{
+    border-radius: 50%;
+    height:1.2rem;
+    width:1.2rem;
+    background-color: rgb(0, 83, 237);
+}
+#bg_color_input,#tile_color_input{
+    border-radius: 5px;
+}
+.color_inputs,.buttons{
+    display:flex;
+    gap:2rem;
+    margin:1rem auto;
+}
+.btn{
+    border-radius:15px;
+    padding:5px 10px;
+    background-color: gold;
+}
+.download_btn{
+    background-color: cyan;
+}
+.download_box{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+    border-radius:15px;
+    padding:2rem;
+    width:200px;
+    height:200px;
+    display:none;
+    transition: .3 all;
+}
